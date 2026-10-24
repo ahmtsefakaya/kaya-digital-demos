@@ -1,4 +1,4 @@
-/* Kaya Digital demo izleme: ziyaret, ara butonu, form. "#ben" ile acilan tarayici kalici olarak haric tutulur. */
+/* Kaya Global Agency demo izleme: ziyaret, ara butonu, form. "#ben" ile acilan tarayici kalici olarak haric tutulur. */
 (function () {
   var s = document.currentScript, id = s && s.getAttribute('data-id'); if (!id) return;
   try { if (location.hash === '#ben') { localStorage.setItem('kd_ben', '1'); history.replaceState(null, '', location.pathname + location.search); } } catch (e) {}

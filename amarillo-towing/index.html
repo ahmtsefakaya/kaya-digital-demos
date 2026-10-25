@@ -453,7 +453,7 @@ form .btn{min-height:52px;width:100%}
     btn.disabled=true;btn.textContent='Sending…';
     var data={};new FormData(f).forEach(function(v,k){data[k]=v;});
     data._subject='Amarillo Towing request';
-    fetch('https://formsubmit.co/ajax/kayagloballlc@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    fetch('https://formsubmit.co/ajax/hello@kayaglobalagency.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
       .then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
       .then(function(){f.style.display='none';document.getElementById('formSuccess').style.display='block';})
       .catch(function(){msg.className='f-full msg err';msg.textContent='Something went wrong sending your request. Please call us at (806) 355-4650.';btn.disabled=false;btn.textContent='Request Callback';});
